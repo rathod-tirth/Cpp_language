@@ -16,7 +16,7 @@ class Return
 		Return show()
 		{
 			Return obj();
-			
+			 
 			return obj;
 		}
 };

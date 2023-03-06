@@ -8,23 +8,23 @@ class OP
 	public:
 		int a;
 		
-		OP(int g)
+		OP()
 		{
-			a=g;
+			a=10;
 		}
-		void operator =(OP obj)
+		void operator ()(OP obj)
 		{
-			cout<<obj.a+a<<endl;
+			cout<<obj.a<<endl;
 		}
 };
 
 int main()
 {
-	OP obj1(5),obj2(10);
+	OP obj1,obj2;
 	
-	obj1=obj2;
+//	obj1.operator ()(obj1);
 	
-	obj1.operator =(obj2);
+	obj1()obj2;
 	
 	return 0;
 }
