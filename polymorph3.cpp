@@ -6,16 +6,25 @@ using namespace std;
 class OP
 {
 	public:
-		void operator =()
+		int a;
+		
+		OP(int g)
 		{
-			cout<<10;
+			a=g;
+		}
+		void operator =(OP obj)
+		{
+			cout<<obj.a+a<<endl;
 		}
 };
 
 int main()
 {
-	OP obj;
-	obj.operator =();
+	OP obj1(5),obj2(10);
+	
+	obj1=obj2;
+	
+	obj1.operator =(obj2);
 	
 	return 0;
 }
