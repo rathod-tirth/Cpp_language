@@ -1,5 +1,7 @@
 // Template
 
+// 1. Class Template:
+
 #include <iostream>
 using namespace std;
 
