@@ -22,9 +22,9 @@ int main()
 {
 	OP obj1,obj2;
 	
-//	obj1.operator ()(obj1);
+	obj1.operator ()(obj1);
 	
-	obj1()obj2;
+//	obj1()obj2;
 	
 	return 0;
 }
